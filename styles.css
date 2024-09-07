@@ -1,8 +1,3 @@
-/* MEDIA QUERIES */
-@media screen and (max-width: 768px) {
-    nav-left: ;
-}
-
 /* -------------------------------------------------------------------------- */
 
 /* Nav styling */
@@ -21,17 +16,13 @@ nav {
   align-items: center;
 }
 
-#dark-mode-switch {
-  font-size: x-large;
-}
-
 .navbar-right {
   display: flex;
   justify-content: end;
   list-style: none;
   align-items: center;
   text-align: center;
-  gap: 80px;
+  gap: 100px;
   margin: 0;
   padding: 0;
 }
@@ -41,24 +32,42 @@ a {
   color: #130456;
 }
 
-/* nav button */
+#dark-mode-switch {
+  font-size: xx-large;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* NAV MENU STYLING */
+
+.nav-text {
+  display: none;
+}
+
+.nav-text:hover {
+  font-weight: bolder;
+}
+
+.show-nav-text {
+  display: block;
+}
+
+#nav-icons {
+  /* padding-bottom: 1em; */
+  font-size: large;
+  display: none;
+}
+
+#nav-icons.show-nav-icons {
+  display: block;
+}
+
+/* minimize nav button */
 #minimize-nav {
   padding: 1.2em;
   border-radius: 10px;
   border: none;
   background-color: #dedaff;
-}
-
-.nav-list {
-  display: none;
-}
-
-.nav-list:hover {
-  font-weight: bolder;
-}
-
-.open-nav-menu {
-  display: flex;
+  cursor: pointer;
 }
 
 /* -------------------------------------------------------------------------- */
